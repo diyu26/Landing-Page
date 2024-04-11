@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page </title>
+</head>
+<body>
+    <header>
+        <h1>Computer Science</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>    
+
+    <section class="main">
+
+            <section class="left">
+                <p class="title">Computer Science</p>
+                <p class="msg"><b>Computer science (CS)</b> is the study of computers and computational systems. It is a broad field which includes everything from the algorithms that make up software to how software interacts with hardware to how well software is developed and designed.</p>
+                <button class="cta">Learn More</button>
+            </section>
+
+            <section class="right">
+                <img src="img.svg" alt="Landing Image">
+            </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('opened')
+        })
+        src="script.js"
+
+
+    </script>
+
+</body>
+</html>
